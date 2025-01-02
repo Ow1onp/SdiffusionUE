@@ -38,7 +38,8 @@
 
 1. Start your Stable Diffusion API server locally (ensure it’s accessible on `http://127.0.0.1:port`).  
 2. In Unreal Engine, call `SetRequestAddress` with the correct port to configure the API endpoint.  
-3. Use `GenerateImage` to send a payload with your desired parameters:  
+3. Use `GenerateImage` to send a payload with your desired parameters:
+   
    ```cpp
    FSDiffusionPayload Payload;
    Payload.Prompt = "A futuristic cityscape at sunset";
@@ -47,8 +48,8 @@
    Payload.Steps = 75;
    USdiffusionUFunctionLibrary::GenerateImage("http://127.0.0.1:7860/sdapi/v1/txt2img", Payload);
    ```  
-4. Listen for the `OnImageGenerated` delegate to retrieve the generated image's path and status.  
-5. Optionally, use `DecodeImage` to load the generated image as a `UTexture2D` for use in your project.  
+5. Listen for the `OnImageGenerated` delegate to retrieve the generated image's path and status.  
+6. Optionally, use `DecodeImage` to load the generated image as a `UTexture2D` for use in your project.  
 
 ---
 
@@ -74,19 +75,6 @@ The following parameters can be configured in the payload:
 | **Steps**         | Number of sampling steps           | `50`           |  
 | **CfgScale**      | Guidance scale                     | `7.0`          |  
 | **HrScale**       | Upscaling factor for high-res mode | `2.0`          |  
-
----
-
-## 🧑‍🎨 Made By  
-
-**Ow1onp**  
-Your creative companion for Unreal Engine projects!  
-
----
-
-## 📜 License  
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and contribute to this plugin.  
 
 ---
 
