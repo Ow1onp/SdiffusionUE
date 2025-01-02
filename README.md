@@ -19,18 +19,20 @@
 
 ## 🛠️ Installation  
 
-1. Clone or download the **SdiffusionUE** plugin to your Unreal Engine project:  
+1. Clone or download the **SdiffusionUE** plugin to your Unreal Engine project:
+   
    ```bash
    git clone https://github.com/your-repo/SdiffusionUE.git
    ```  
-2. Place the plugin in your project’s `Plugins` folder:  
+3. Place the plugin in your project’s `Plugins` folder:
+   
    ```
    YourProject/
    ├── Plugins/
        ├── SdiffusionUE/
    ```  
-3. Open your project in Unreal Engine and enable the plugin in **Edit > Plugins**.  
-4. Restart your project to complete the setup.  
+4. Open your project in Unreal Engine and enable the plugin in **Edit > Plugins**.  
+5. Restart your project to complete the setup.  
 
 ---
 
