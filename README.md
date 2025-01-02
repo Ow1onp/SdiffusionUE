@@ -4,7 +4,6 @@
 
 **SdiffusionUE** is a powerful Unreal Engine plugin that integrates with **Stable Diffusion**, allowing you to generate stunning AI-generated images directly within your Unreal Engine projects. Whether you're creating high-quality textures, concept art, or unique visuals, this plugin is your gateway to endless creativity!  
 
----
 
 ## 🎨 Features  
 
@@ -15,7 +14,6 @@
 - **Real-Time Feedback**: Receive status updates using dynamic multicast delegates.  
 - **Extensible**: Built with Unreal's HTTP and JSON utilities for easy customization.  
 
----
 
 ## 🛠️ Installation  
 
@@ -34,7 +32,6 @@
 4. Open your project in Unreal Engine and enable the plugin in **Edit > Plugins**.  
 5. Restart your project to complete the setup.  
 
----
 
 ## 🧑‍💻 Usage  
 
@@ -53,7 +50,6 @@
 5. Listen for the `OnImageGenerated` delegate to retrieve the generated image's path and status.  
 6. Optionally, use `DecodeImage` to load the generated image as a `UTexture2D` for use in your project.  
 
----
 
 ## 📦 Example Blueprint  
 
@@ -62,7 +58,6 @@ You can also use **SdiffusionUE** in Blueprints! Here's how:
 - Use the `GenerateImage` node to send the payload.  
 - Bind to the `OnImageGenerated` delegate to handle the results.  
 
----
 
 ## 🔧 Configuration  
 
@@ -78,6 +73,5 @@ The following parameters can be configured in the payload:
 | **CfgScale**      | Guidance scale                     | `7.0`          |  
 | **HrScale**       | Upscaling factor for high-res mode | `2.0`          |  
 
----
 
 ### 🌟 Unleash your creativity with **SdiffusionUE**!
