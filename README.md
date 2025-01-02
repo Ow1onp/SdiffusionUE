@@ -56,7 +56,19 @@
 You can also use **SdiffusionUE** in Blueprints! Here's how:  
 - Call `SetRequestAddress` to set the API URL.  
 - Use the `GenerateImage` node to send the payload.  
-- Bind to the `OnImageGenerated` delegate to handle the results.  
+- Bind to the `OnImageGenerated` delegate to handle the results.
+
+[Detailed Parameters Example](https://github.com/Ow1onp/SdiffusionUE/blob/main/1.png)
+
+Example: Binding and handling the image generation event.
+
+[Detailed Parameters Example](https://github.com/Ow1onp/SdiffusionUE/blob/main/2.png)
+
+Example: Configuring parameters for the generation payload.
+
+[Detailed Parameters Example](https://github.com/Ow1onp/SdiffusionUE/blob/main/3.png)
+
+Example: Sending the image generation request.
 
 
 ## 🔧 Configuration  
