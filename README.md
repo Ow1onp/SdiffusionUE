@@ -4,7 +4,6 @@
 
 **SdiffusionUE** is a powerful Unreal Engine plugin that integrates with **Stable Diffusion**, allowing you to generate stunning AI-generated images directly within your Unreal Engine projects. Whether you're creating high-quality textures, concept art, or unique visuals, this plugin is your gateway to endless creativity!  
 
-
 ## 🎨 Features  
 
 - **Custom Prompts**: Generate images based on your specific descriptions.  
@@ -14,6 +13,7 @@
 - **Real-Time Feedback**: Receive status updates using dynamic multicast delegates.  
 - **Extensible**: Built with Unreal's HTTP and JSON utilities for easy customization.  
 
+---
 
 ## 🛠️ Installation  
 
@@ -22,16 +22,17 @@
    ```bash
    git clone https://github.com/your-repo/SdiffusionUE.git
    ```  
-3. Place the plugin in your project’s `Plugins` folder:
+2. Place the plugin in your project’s `Plugins` folder:
    
    ```
    YourProject/
    ├── Plugins/
        ├── SdiffusionUE/
    ```  
-4. Open your project in Unreal Engine and enable the plugin in **Edit > Plugins**.  
-5. Restart your project to complete the setup.  
+3. Open your project in Unreal Engine and enable the plugin in **Edit > Plugins**.  
+4. Restart your project to complete the setup.  
 
+---
 
 ## 🧑‍💻 Usage  
 
@@ -47,9 +48,10 @@
    Payload.Steps = 75;
    USdiffusionUFunctionLibrary::GenerateImage("http://127.0.0.1:7860/sdapi/v1/txt2img", Payload);
    ```  
-5. Listen for the `OnImageGenerated` delegate to retrieve the generated image's path and status.  
-6. Optionally, use `DecodeImage` to load the generated image as a `UTexture2D` for use in your project.  
+4. Listen for the `OnImageGenerated` delegate to retrieve the generated image's path and status.  
+5. Optionally, use `DecodeImage` to load the generated image as a `UTexture2D` for use in your project.  
 
+---
 
 ## 📦 Example Blueprint  
 
@@ -58,15 +60,22 @@ You can also use **SdiffusionUE** in Blueprints! Here's how:
 - Use the `GenerateImage` node to send the payload.  
 - Bind to the `OnImageGenerated` delegate to handle the results.  
 
-### Example:
-![Blueprint Initialization](./1.png)   
+### Full Blueprint Example:
+![Blueprint Overview](./1.png)
 
-### Parameters Configuration:
-![Parameters Configuration](./2.png)  
+### Initialization:
+![Initialization](./2.png)
 
 ### Sending Request:
-![Sending Request](./3.png)  
+![Send Request](./3.png)
 
+### Parameter Adjustments:
+![Parameter Adjustment](./4.png)
+
+### Generated Output:
+![Generated Output](./5.png)
+
+---
 
 ## 🔧 Configuration  
 
@@ -82,5 +91,6 @@ The following parameters can be configured in the payload:
 | **CfgScale**      | Guidance scale                     | `7.0`          |  
 | **HrScale**       | Upscaling factor for high-res mode | `2.0`          |  
 
+---
 
 ### 🌟 Unleash your creativity with **SdiffusionUE**!
