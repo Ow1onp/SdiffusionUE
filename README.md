@@ -64,13 +64,13 @@ You can also use **SdiffusionUE** in Blueprints! Here's how:
 ![Blueprint Overview](./2.png)
 
 ### Initialization:
-![Initialization](./3.png)
+![Initialization](./8.png)
 
 ### Sending Request:
-![Send Request](./4.png)
+![Send Request](./9.png)
 
 ### Parameter Adjustments:
-![Parameter Adjustment](./5.png)
+![Parameter Adjustment](./10.png)
 
 ### Generated Output:
 ![Generated Output](./1.png)
