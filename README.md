@@ -61,19 +61,19 @@ You can also use **SdiffusionUE** in Blueprints! Here's how:
 - Bind to the `OnImageGenerated` delegate to handle the results.  
 
 ### Full Blueprint Example:
-![Blueprint Overview](./1.png)
+![Blueprint Overview](./2.png)
 
 ### Initialization:
-![Initialization](./2.png)
+![Initialization](./3.png)
 
 ### Sending Request:
-![Send Request](./3.png)
+![Send Request](./4.png)
 
 ### Parameter Adjustments:
-![Parameter Adjustment](./4.png)
+![Parameter Adjustment](./5.png)
 
 ### Generated Output:
-![Generated Output](./5.png)
+![Generated Output](./1.png)
 
 ---
 
